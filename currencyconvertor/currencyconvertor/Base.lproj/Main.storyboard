@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="currencyconvertor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="why-mu-tXj">
+                                <rect key="frame" x="154" y="411.66666666666669" width="82" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="convert"/>
+                                <connections>
+                                    <action selector="convert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nhD-jo-1ST"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CAD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kex-VU-SIw">
+                                <rect key="frame" x="178.66666666666666" y="327.66666666666669" width="111.33333333333334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="tel"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="US$" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p0b-ed-Ewp">
+                                <rect key="frame" x="177" y="243.66666666666663" width="113" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="tel"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rD-Hd-Oc3">
+                                <rect key="frame" x="100" y="338.66666666666669" width="38.666666666666657" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZa-vg-3hL">
+                                <rect key="frame" x="100" y="255.66666666666663" width="37" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6rD-Hd-Oc3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="7He-9Q-2FM"/>
+                            <constraint firstItem="why-mu-tXj" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="8jC-XN-DLI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p0b-ed-Ewp" secondAttribute="trailing" constant="100" id="B4u-M7-Mrn"/>
+                            <constraint firstItem="Kex-VU-SIw" firstAttribute="leading" secondItem="6rD-Hd-Oc3" secondAttribute="trailing" constant="40" id="E3T-DC-02S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kex-VU-SIw" secondAttribute="trailing" constant="100" id="Llf-Zx-1NW"/>
+                            <constraint firstItem="why-mu-tXj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="154" id="Mg4-IF-PRB"/>
+                            <constraint firstItem="6rD-Hd-Oc3" firstAttribute="top" secondItem="NZa-vg-3hL" secondAttribute="bottom" constant="60" id="MrI-KO-xoC"/>
+                            <constraint firstItem="why-mu-tXj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cEU-Fp-PCH"/>
+                            <constraint firstItem="p0b-ed-Ewp" firstAttribute="leading" secondItem="NZa-vg-3hL" secondAttribute="trailing" constant="40" id="hQ6-DI-cGH"/>
+                            <constraint firstItem="Kex-VU-SIw" firstAttribute="top" secondItem="p0b-ed-Ewp" secondAttribute="bottom" constant="50" id="lhJ-aI-BYL"/>
+                            <constraint firstItem="NZa-vg-3hL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="nuH-wz-O4L"/>
+                            <constraint firstItem="why-mu-tXj" firstAttribute="top" secondItem="Kex-VU-SIw" secondAttribute="bottom" constant="50" id="tFF-t3-9c4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="why-mu-tXj" secondAttribute="trailing" constant="154" id="uHR-I2-7e6"/>
+                            <constraint firstItem="why-mu-tXj" firstAttribute="top" secondItem="6rD-Hd-Oc3" secondAttribute="bottom" constant="50" id="w6h-VQ-yP1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cad" destination="Kex-VU-SIw" id="Vu2-nj-t2D"/>
+                        <outlet property="convert" destination="why-mu-tXj" id="tSL-bA-vza"/>
+                        <outlet property="us" destination="p0b-ed-Ewp" id="NuQ-V9-bVZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.53846153846153" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
